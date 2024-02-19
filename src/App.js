@@ -7,7 +7,7 @@ function App() {
   useEffect(() => {
     const fetchPosts = async () => {
       try {
-        const response = await api.get("/todos");
+        const response = await api.get("/posts");
         setPosts(response.data);
       } catch (error) {
         console.error("There was an error!", error);
